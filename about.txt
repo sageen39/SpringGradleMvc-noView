@@ -1,0 +1,9 @@
+The dispatcher servlet is Spring MVC central servlet that dispatches request to the controllers within our application.
+It is integrated with spring ioc container
+Dispatcher servlet will map to application context. appContext represents IOC container which is responsible for Bean config, Instantiation and Injection
+It configures MVC configuration
+
+Root Application Context: middle tier services like data access services, other bean that handles business logic.
+It can be shared among multiple Dispatcher servlet
+It configure the beans that are outside the scope of dispatcher servlet/not MVC like: data Repositories, security
+
